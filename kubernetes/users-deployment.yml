@@ -15,7 +15,7 @@ spec:
       containers:
       - name: users
         image: ahmedshab/kub-demo-users:latest
-        alwaysPull: true
+        imagePullPolicy: Always
         env:
         - name: AUTH_ADDRESS
           value: auth-service
